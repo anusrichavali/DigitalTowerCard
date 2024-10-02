@@ -14,6 +14,7 @@
 		F91314FA2CA78EE000FBAA54 /* DigitalTowerCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91314F92CA78EE000FBAA54 /* DigitalTowerCardTests.swift */; };
 		F91315042CA78EE000FBAA54 /* DigitalTowerCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91315032CA78EE000FBAA54 /* DigitalTowerCardUITests.swift */; };
 		F91315062CA78EE000FBAA54 /* DigitalTowerCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91315052CA78EE000FBAA54 /* DigitalTowerCardUITestsLaunchTests.swift */; };
+		F9240ED52CADF3A9008D2FD1 /* EmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9240ED42CADF3A9008D2FD1 /* EmailService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F91314FF2CA78EE000FBAA54 /* DigitalTowerCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalTowerCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91315032CA78EE000FBAA54 /* DigitalTowerCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalTowerCardUITests.swift; sourceTree = "<group>"; };
 		F91315052CA78EE000FBAA54 /* DigitalTowerCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalTowerCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9240ED42CADF3A9008D2FD1 /* EmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		F91314DC2CA78EDF00FBAA54 = {
 			isa = PBXGroup;
 			children = (
+				F9240ED42CADF3A9008D2FD1 /* EmailService.swift */,
 				F91314E72CA78EDF00FBAA54 /* DigitalTowerCard */,
 				F91314F82CA78EE000FBAA54 /* DigitalTowerCardTests */,
 				F91315022CA78EE000FBAA54 /* DigitalTowerCardUITests */,
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9240ED52CADF3A9008D2FD1 /* EmailService.swift in Sources */,
 				F91314EB2CA78EDF00FBAA54 /* ContentView.swift in Sources */,
 				F91314E92CA78EDF00FBAA54 /* DigitalTowerCardApp.swift in Sources */,
 			);
