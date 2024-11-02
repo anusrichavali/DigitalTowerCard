@@ -4,17 +4,19 @@ from fastapi import FastAPI, Body
 import requests
 from dotenv import load_dotenv
 import os
+import secrets
 
 load_dotenv()
 
 resend.api_key = os.getenv("RESEND_API_KEY")
 
-print(os.getenv("RESEND_API_KEY"))
 
 app = FastAPI()
 
 @app.post("/")
 def send_mail() -> Dict:
+    verification_number = secrets.randbelow(9000) + 1000
+
     html_content = f"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" lang="en">
 
@@ -36,7 +38,7 @@ def send_mail() -> Dict:
               <tbody>
                 <tr>
                   <td>
-                    <h1 style="color:#000;display:inline-block;padding-bottom:8px;padding-top:8px;margin:0 auto;width:100%;text-align:center;letter-spacing:8px">564873</h1>
+                    <h1 style="color:#000;display:inline-block;padding-bottom:8px;padding-top:8px;margin:0 auto;width:100%;text-align:center;letter-spacing:8px">{verification_number}</h1>
                   </td>
                 </tr>
               </tbody>
