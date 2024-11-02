@@ -9,6 +9,8 @@ load_dotenv()
 
 resend.api_key = os.getenv("RESEND_API_KEY")
 
+print(os.getenv("RESEND_API_KEY"))
+
 app = FastAPI()
 
 @app.post("/")
@@ -20,7 +22,6 @@ def send_mail() -> Dict:
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <meta name="x-apple-disable-message-reformatting" /><!--$-->
   </head>
-  <div style="display:none;overflow:hidden;line-height:1px;opacity:0;max-height:0;max-width:0">Sign in to jobaccepted.com<div> ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿</div>
   </div>
 
   <body style="background-color:#ffffff;font-family:HelveticaNeue,Helvetica,Arial,sans-serif;text-align:center">
@@ -28,9 +29,9 @@ def send_mail() -> Dict:
       <tbody>
         <tr style="width:100%">
           <td>
-            <p style="font-size:18px;line-height:24px;margin:16px 0;font-weight:bold;text-align:center">Job Accepted</p>
-            <h1 style="text-align:center">Your authentication code</h1>
-            <p style="font-size:14px;line-height:24px;margin:16px 0;text-align:center">Enter it in your open browser window or press the sign in button. This code will expire in 15 minutes.</p>
+            <p style="font-size:18px;line-height:24px;margin:16px 0;font-weight:bold;text-align:center">Tower Card</p>
+            <h1 style="text-align:center">Your verification code</h1>
+            <p style="font-size:14px;line-height:24px;margin:16px 0;text-align:center">Enter it in the Tower Card application. This code will expire in 15 minutes.</p>
             <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="background:rgba(0,0,0,.05);border-radius:4px;margin:16px auto 14px;vertical-align:middle;width:280px;max-width:100%">
               <tbody>
                 <tr>
@@ -41,14 +42,8 @@ def send_mail() -> Dict:
               </tbody>
             </table>
             <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="margin:27px auto;width:auto">
-              <tbody>
-                <tr>
-                  <td><a href="https://www.jobaccepted.com/" style="line-height:100%;text-decoration:none;display:inline-block;max-width:100%;mso-padding-alt:0px;background-color:#5e6ad2;border-radius:3px;font-weight:600;color:#fff;text-align:center;padding:12px 24px 12px 24px;margin:0 auto" target="_blank"><span><!--[if mso]><i style="mso-font-width:400%;mso-text-raise:18" hidden>&#8202;&#8202;&#8202;</i><![endif]--></span><span style="max-width:100%;display:inline-block;line-height:120%;mso-padding-alt:0px;mso-text-raise:9px">Sign in</span><span><!--[if mso]><i style="mso-font-width:400%" hidden>&#8202;&#8202;&#8202;&#8203;</i><![endif]--></span></a></td>
-                </tr>
-              </tbody>
             </table>
-            <p style="font-size:14px;line-height:24px;margin:0;color:#444;letter-spacing:0;padding:0 40px;text-align:center">Not expecting this email?</p>
-            <p style="font-size:14px;line-height:24px;margin:0;color:#444;letter-spacing:0;padding:0 40px;text-align:center">Contact<!-- --> <a href="mailto:support@jobaccepted.com" style="color:#444;text-decoration:underline" target="_blank">support@jobaccepted.com</a> <!-- -->if you did not request this code.</p>
+            <p style="font-size:14px;line-height:24px;margin:0;color:#444;letter-spacing:0;padding:0 40px;text-align:center">If you didn't request this code, you can safely ignore this email.</p>
           </td>
         </tr>
       </tbody>
@@ -57,9 +52,9 @@ def send_mail() -> Dict:
 
 </html>"""
     params: resend.Emails.SendParams = {
-        "from": "whalelel@gmail.com", # may need to change based on sending limits. for testing purposes only.
+        "from": "onboarding@resend.dev", # may need to change based on sending limits. for testing purposes only.
         "to": ["neha.washikar@gmail.com"],
-        "subject": "Hello World",
+        "subject": "Your Tower Card Verification Code",
         "html": html_content,
     }
     email_response: resend.Email = resend.Emails.send(params)
