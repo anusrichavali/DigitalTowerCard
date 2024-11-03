@@ -14,8 +14,13 @@ resend.api_key = os.getenv("RESEND_API_KEY")
 app = FastAPI()
 
 @app.post("/")
-def send_mail() -> Dict:
+def send_mail(email: Dict[str, str] = Body(...)) -> Dict:
     verification_number = secrets.randbelow(9000) + 1000
+    
+    recipient_email = email.get("email")
+    
+    if not recipient_email:
+        return {"error": "Email is required"}
 
     html_content = f"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" lang="en">

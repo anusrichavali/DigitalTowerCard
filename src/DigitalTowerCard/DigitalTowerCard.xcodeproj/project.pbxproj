@@ -46,6 +46,7 @@
 		F91315032CA78EE000FBAA54 /* DigitalTowerCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalTowerCardUITests.swift; sourceTree = "<group>"; };
 		F91315052CA78EE000FBAA54 /* DigitalTowerCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalTowerCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F9240ED42CADF3A9008D2FD1 /* EmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailService.swift; sourceTree = "<group>"; };
+		F954289C2CD7658A007AD7D6 /* DigitalTowerCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigitalTowerCard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		F91314E72CA78EDF00FBAA54 /* DigitalTowerCard */ = {
 			isa = PBXGroup;
 			children = (
+				F954289C2CD7658A007AD7D6 /* DigitalTowerCard.entitlements */,
 				F91314E82CA78EDF00FBAA54 /* DigitalTowerCardApp.swift */,
 				F91314EA2CA78EDF00FBAA54 /* ContentView.swift */,
 				F91314EC2CA78EE000FBAA54 /* Assets.xcassets */,
@@ -423,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DigitalTowerCard/DigitalTowerCard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DigitalTowerCard/Preview Content\"";
@@ -451,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DigitalTowerCard/DigitalTowerCard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DigitalTowerCard/Preview Content\"";
